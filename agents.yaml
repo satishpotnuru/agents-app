@@ -1,0 +1,19 @@
+agents:
+  - agent_id: 1
+    name: John Doe
+    email: john.doe@example.com
+    phone: 123-456-7890
+    availabletimes: Mon-Fri 9am-5pm
+    address: 123 Main St, City, Country
+  - agent_id: 2
+    name: Jane Smith
+    email: jane.smith@example.com
+    phone: 234-567-8901
+    availabletimes: Mon-Fri 10am-6pm
+    address: 456 Elm St, City, Country
+  - agent_id: 3
+    name: Bob Johnson
+    email: bob.johnson@example.com
+    phone: 345-678-9012
+    availabletimes: Sat-Sun 8am-4pm
+    address: 789 Oak St, City, Country

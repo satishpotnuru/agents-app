@@ -1,0 +1,281 @@
+body { font-family: 'Segoe UI', 'Arial', sans-serif; background: #f7f7f7; margin: 0; padding: 0; padding-top: 80px; padding-bottom: 80px;}
+.main-header, .main-footer { background: linear-gradient(90deg, #1a3556 0%, #2980b9 100%); color: #fff; }
+.main-header { padding: 30px 0 15px 0; box-shadow: 0 2px 8px rgba(44,62,80,0.08); position: fixed; top: 0; left: 0; width: 100%; z-index: 200; min-height: 80px; height: 80px; display: flex; align-items: center; }
+.header-content { max-width: 900px; margin: 0 auto; text-align: center; }
+.header-content h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+.subtitle { font-size: 1.2em; color: #eaf6ff; margin-top: 8px; display: block; }
+#main { padding: 30px 20px 30px 20px; max-width: 900px; margin: 0 auto; margin-left: 260px; }
+#agent-list {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.agent-item { background: #fff; margin: 18px 0; padding: 22px 18px; border-radius: 7px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: box-shadow 0.2s; font-family: 'Segoe UI', 'Arial', sans-serif; font-size: 1.08em; line-height: 2.1; letter-spacing: 0.2px; }
+.agent-item:hover { background: #eaf6ff; box-shadow: 0 4px 12px rgba(41,128,185,0.10); }
+.agent-link { font-weight: 600; font-size: 1.08em; }
+#agent-details { background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.back-btn { margin-bottom: 15px; display: inline-block; color: #2980b9; cursor: pointer; }
+.main-footer { position: fixed; bottom: 0; left: 0; width: 100%; min-height: 80px; height: 80px; background: linear-gradient(90deg, #1a3556 0%, #2980b9 100%); color: #fff; padding: 0; text-align: center; margin-top: 40px; box-shadow: 0 -2px 8px rgba(44,62,80,0.08); display: flex; align-items: center; justify-content: center; z-index: 150; }
+.footer-content { width: 100%; font-size: 1em; }
+.card-agent {
+    background: #fff;
+    margin: 18px 0;
+    padding: 22px 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 1.08em;
+    line-height: 2.1;
+    letter-spacing: 0.2px;
+    display: block;
+}
+.agent-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.agent-name {
+    font-size: 2em;
+    font-weight: 800;
+    color: #1a3556;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+.agent-page-btn {
+    border: 2px solid #1a3556;
+    background: #fff;
+    color: #1a3556;
+    border-radius: 25px;
+    padding: 7px 22px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.agent-page-btn:hover {
+    background: #1a3556;
+    color: #fff;
+}
+.agent-info {
+    margin-left: 2px;
+    margin-top: 8px;
+}
+.agent-link-phone {
+    color: #2980b9;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.agent-link-email {
+    color: #2980b9;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 2px;
+}
+.agent-icon {
+    margin-right: 7px;
+    color: #1a3556;
+}
+.agent-detail-title {
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #1a3556;
+    margin-bottom: 32px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.agent-detail-card {
+    background: #eaf8fb;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 320px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    gap: 0;
+    max-width: 800px;
+    margin: 40px auto;
+}
+.agent-detail-left {
+    flex: 1;
+    min-width: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+    text-align: left;
+}
+.agent-detail-name,
+.agent-detail-company,
+.agent-detail-role,
+.agent-detail-desc,
+.agent-detail-contact,
+.agent-detail-moreinfo {
+    text-align: left;
+    align-items: flex-start;
+}
+.agent-detail-company {
+    font-size: 1.18em;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.agent-detail-role {
+    font-size: 1.12em;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.agent-detail-desc {
+    font-size: 1.08em;
+    color: #222;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.7;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.agent-detail-contact {
+    margin-bottom: 0;
+    font-size: 1.08em;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.agent-detail-contact .agent-icon {
+    margin-right: 7px;
+    color: #1a3556;
+    font-size: 1.08em;
+}
+.agent-detail-contact .agent-link-phone {
+    color: #2980b9;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.08em;
+}
+.agent-detail-contact .agent-link-email {
+    color: #2980b9;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 2px;
+    font-size: 1.08em;
+}
+.agent-detail-appointment {
+    margin-top: 0;
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 32px;
+    font-size: 1.12em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+.agent-detail-appointment:hover {
+    background: #1a3556;
+}
+.agent-detail-right {
+    flex: 0 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+}
+.agent-detail-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+.agent-detail-moreinfo {
+    margin-top: 0;
+    background: none;
+    border-radius: 8px;
+    padding: 18px 20px;
+    font-size: 1.05em;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+}
+.agent-detail-moreinfo h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.15em;
+    color: #1a3556;
+    font-weight: 700;
+}
+.agent-detail-moreinfo ul {
+    margin: 0;
+    padding-left: 18px;
+}
+.agent-detail-moreinfo li {
+    margin-bottom: 8px;
+    color: #222;
+}
+#category-filter {
+    margin-bottom: 28px;
+    background: #f7f7f7;
+    padding: 18px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+#category-filter label {
+    font-size: 1.08em;
+    color: #1a3556;
+    font-weight: 600;
+}
+#category-filter select {
+    padding: 7px 14px;
+    border-radius: 4px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+}
+#category-filter button {
+    background: #2980b9;
+    color: #fff;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+#category-filter button:hover {
+    background: #1a3556;
+}
+.sidebar {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 240px;
+    background: #f7f7f7;
+    border-right: 1px solid #e0e0e0;
+    max-height: calc(100vh - 120px - 80px); /* header and footer height */
+    height: auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px 18px 18px 18px;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.sidebar-section {
+    margin-bottom: 24px;
+    font-size: 1.08em;
+    color: #1a3556;
+    font-weight: 600;
+}
