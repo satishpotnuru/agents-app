@@ -279,3 +279,74 @@ body { font-family: 'Segoe UI', 'Arial', sans-serif; background: #f7f7f7; margin
     color: #1a3556;
     font-weight: 600;
 }
+@media (max-width: 700px) {
+    body {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .main-header, .main-footer {
+        min-height: 60px;
+        height: 60px;
+        font-size: 1em;
+    }
+    .header-content h1 {
+        font-size: 1.5em;
+    }
+    #main {
+        margin-left: 0;
+        padding: 18px 6px 18px 6px;
+        max-width: 100vw;
+    }
+    #agent-list {
+        margin-top: 65px;
+        padding: 0;
+    }
+    .sidebar {
+        position: static;
+        width: 100%;
+        max-width: 100vw;
+        margin-bottom: 18px;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px 6px;
+        font-size: 1em;
+    }
+    .card-agent, .agent-item {
+        padding: 14px 8px;
+        font-size: 1em;
+        margin: 12px 0;
+    }
+    .agent-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .agent-name {
+        font-size: 1.1em;
+    }
+    .agent-page-btn {
+        width: 100%;
+        padding: 7px 0;
+        font-size: 1em;
+        margin-top: 6px;
+    }
+    #agent-details {
+        padding: 10px 4px;
+        font-size: 1em;
+    }
+    .agent-detail-name {
+        font-size: 1.3em !important;
+    }
+    .agent-detail-contact {
+        font-size: 1em;
+    }
+    .agent-detail-moreinfo {
+        padding: 10px 4px;
+        font-size: 0.98em;
+    }
+    .main-footer {
+        font-size: 0.95em;
+        min-height: 60px;
+        height: 60px;
+    }
+}
